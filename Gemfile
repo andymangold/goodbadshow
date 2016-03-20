@@ -14,4 +14,4 @@ gem 'middleman-livereload'
 
 gem 'bourbon'
 
-gem 'middleman-gh-pages'
+gem 'middleman-deploy', '~> 1.0'
