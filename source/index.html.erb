@@ -1,0 +1,21 @@
+---
+title: Good Bad Show
+---
+
+<div class="logo">
+  <%= image_tag 'good.png', class: "logo-type-good" %>
+  <%= image_tag 'bad.png', class: "logo-type-bad" %>
+  <%= image_tag 'show.png', class: "logo-type-show" %>
+</div>
+<div class="tagline">A small podcast trying to answer a big&nbsp;question.</div>
+<iframe class="soundcloud-player" width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/253597092&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+<div class="feed-links">
+  <% link_to 'http://feed.goodbad.show/goodbadfeed', class: "feed-link" do %>
+    <%= image_tag 'rss.png' %>
+  <% end %>
+  <% link_to 'pcast://feed.goodbad.show/goodbadfeed', class: "feed-link" do %>
+    <%= image_tag 'itunes.png' %>
+  <% end %>
+</div>
+<%= link_to '@realgoodbadshow', 'http://twitter.com/realgoodbadshow', class: "twitter-link" %>
+
