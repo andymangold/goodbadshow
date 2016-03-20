@@ -14,4 +14,4 @@ gem 'middleman-livereload'
 
 gem 'bourbon'
 
-gem 'middleman-deploy', '~> 1.0'
+gem 'middleman-deploy', github: 'middleman-contrib/middleman-deploy', branch: 'master'
