@@ -10,6 +10,7 @@ title: Good Bad Show
 <div class="tagline">A small podcast struggling to answer a big&nbsp;question.</div>
 
 <% data.episodes.each do |episode| %>
+  <h2><%= episode.title %></h2>
   <%= partial("shared/soundcloud_player", :locals => { :soundcloudID => episode.soundcloudID }) %>
 <% end %>
 

@@ -1,60 +1,80 @@
 -
   title: Trailer
+  slug: trailer
   soundcloudID: 253597092
 -
   title: Bread
+  slug: bread
   soundcloudID: 255515859
 -
   title: Nothing Movie
+  slug: nothing-movie
   soundcloudID: 256683396
 -
   title: 4′33″
+  slug: 4_33
   soundcloudID: 256686827
 -
   title: Humanity
+  slug: humanity
   soundcloudID: 259164716
 -
   title: Airplane Seat Reclining
+  slug: airplane-seat-reclining
   soundcloudID: 259943541
 -
   title: The Room
+  slug: the-room
   soundcloudID: 260576587
 -
   title: Democracy
+  slug: democracy
   soundcloudID: 262101536
 -
   title: Developing Taste
+  slug: developing-taste
   soundcloudID: 262944437
 -
   title: Garfield
+  slug: garfield
   soundcloudID: 263816301
 -
   title: House Hunters
+  slug: house-hunters
   soundcloudID: 264738207
 -
   title: Math
+  slug: math
   soundcloudID: 266142504
 -
   title: Dishwashers
+  slug: dishwashers
   soundcloudID: 267289639
 -
   title: Astrology
+  slug: astrology
   soundcloudID: 268308160
 -
   title: Seasons
+  slug: seasons
   soundcloudID: 269518699
 -
   title: Bureaucracy
+  slug: bureaucracy
   soundcloudID: 271591115
 -
   title: The Coolest
+  slug: the-coolest
   soundcloudID: 273486295
 -
   title: Attractiveness
+  slug: attractiveness
   soundcloudID: 275531658
 -
   title: "Magic: The Gathering"
+  slug: magic-the-gathering
   soundcloudID: 277734944
 -
   title: Masculinity
+  slug: masculinity
   soundcloudID: 281118493
