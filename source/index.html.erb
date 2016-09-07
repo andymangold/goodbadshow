@@ -2,25 +2,13 @@
 title: Good Bad Show
 ---
 
-<div class="logo">
-  <%= image_tag 'good.png', class: "logo-type-good" %>
-  <%= image_tag 'bad.png', class: "logo-type-bad" %>
-  <%= image_tag 'show.png', class: "logo-type-show" %>
-</div>
-<div class="tagline">A small podcast struggling to answer a big&nbsp;question.</div>
+<%= partial "shared/header" %>
 
-<% data.episodes.each do |episode| %>
-  <h2><%= link_to episode.title, "/episodes/#{episode.slug}.html" %></h2>
-<% end %>
-
-
-<div class="feed-links">
-  <% link_to 'http://feed.goodbad.show/goodbadfeed', class: "feed-link" do %>
-    <%= image_tag 'rss.png' %>
-  <% end %>
-  <% link_to 'https://itunes.apple.com/us/podcast/good-bad-show/id1095158552?mt=2', class: "feed-link" do %>
-    <%= image_tag 'itunes.png' %>
+<div>
+  <% data.episodes.reverse.each do |episode| %>
+    <%= link_to episode.title, "/episodes/#{episode.slug}.html", class: "index-episode-title" %>
   <% end %>
 </div>
+
 <%= link_to '@realgoodbadshow', 'http://twitter.com/realgoodbadshow', class: "twitter-link" %>
 

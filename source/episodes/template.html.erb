@@ -2,5 +2,7 @@
 title: Good Bad Show
 ---
 
-<h1><%= title %></h1>
+<%= partial "shared/header" %>
+
+<h1 class="episode-title"><%= title %></h1>
 <%= partial("shared/soundcloud_player", :locals => { :soundcloudID => soundcloudID }) %>

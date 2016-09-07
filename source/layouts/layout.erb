@@ -7,7 +7,9 @@
     <meta name="description" content="Good Bad Show is a small podcast struggling to answer a big question, brought to you by Andy Mangold and Matt McInerney."
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "Middleman" %></title>
+    <title><%= current_page.data.title %></title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
     <%= stylesheet_link_tag :site %>
     <%= javascript_include_tag :all %>
