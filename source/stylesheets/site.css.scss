@@ -30,8 +30,9 @@ body {
   line-height: 1.2em;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  font-weight: 300;
 
-  @include font-resizing(10, 2000px, 320px, 5em, 1em);
+  @include font-resizing(10, 2000px, 320px, 2.5em, 1em);
 }
 
 .logo {
@@ -109,7 +110,8 @@ a.feed-link {
   display: inline;
   text-decoration: none;
   color: inherit;
-  margin: 0 0.25em;
+  margin: 0 0.5em;
+  line-height: 170%;
 
   &:hover {
     text-decoration: underline;
