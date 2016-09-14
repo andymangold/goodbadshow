@@ -1,12 +1,23 @@
 @charset "utf-8";
 @import "normalize";
 
+@mixin font-resizing($breakpoint-count, $max-width, $min-width, $max-size, $min-size) {
+  $size-interval: ($max-size - $min-size) / $breakpoint-count;
+  $width-interval: ($max-width - $min-width) / $breakpoint-count;
+
+  @for $breakpoint from 1 through $breakpoint-count {
+    @media screen and (min-width: $min-width + $width-interval * ($breakpoint - 1)) {
+      font-size: $min-size + $size-interval * $breakpoint;
+    }
+  }
+}
+
 body {
   background: #FFEF2B;
   text-align: center;
   margin: 7%;
   margin-bottom: 12%;
-  font-family: Verdana;
+  font-family: 'Poppins', sans-serif;
 
   @media screen and (min-width: 1000px) {
     margin: 70px;
@@ -14,13 +25,25 @@ body {
   }
 }
 
+%primary-heading {
+  font-size: 1em;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 300;
+
+  @include font-resizing(10, 2000px, 320px, 2.5em, 1em);
+}
+
 .logo {
-  letter-spacing: 4em;
+  letter-spacing: 3em;
+  display: block;
+  text-decoration: none;
 }
 
 %logo-type {
   display: inline-block;
-  max-height: 8em;
+  max-height: 6em;
   margin: 3% 0;
 
   @media screen and (min-width: 1000px) {
@@ -80,4 +103,21 @@ a.feed-link {
   display: inline-block;
   margin: 2em 0;
   color: #000;
+}
+
+.index-episode-title {
+  @extend %primary-heading;
+  display: inline;
+  text-decoration: none;
+  color: inherit;
+  margin: 0 0.5em;
+  line-height: 170%;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.episode-title {
+  @extend %primary-heading;
 }
