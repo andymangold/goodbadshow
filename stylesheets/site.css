@@ -317,18 +317,57 @@ body {
   text-align: center;
   margin: 7%;
   margin-bottom: 12%;
-  font-family: Verdana; }
+  font-family: 'Poppins', sans-serif; }
   @media screen and (min-width: 1000px) {
     body {
       margin: 70px;
       margin-bottom: 160px; } }
 
+.index-episode-title, .episode-title {
+  font-size: 1em;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 300; }
+  @media screen and (min-width: 320px) {
+    .index-episode-title, .episode-title {
+      font-size: 1.15em; } }
+  @media screen and (min-width: 488px) {
+    .index-episode-title, .episode-title {
+      font-size: 1.3em; } }
+  @media screen and (min-width: 656px) {
+    .index-episode-title, .episode-title {
+      font-size: 1.45em; } }
+  @media screen and (min-width: 824px) {
+    .index-episode-title, .episode-title {
+      font-size: 1.6em; } }
+  @media screen and (min-width: 992px) {
+    .index-episode-title, .episode-title {
+      font-size: 1.75em; } }
+  @media screen and (min-width: 1160px) {
+    .index-episode-title, .episode-title {
+      font-size: 1.9em; } }
+  @media screen and (min-width: 1328px) {
+    .index-episode-title, .episode-title {
+      font-size: 2.05em; } }
+  @media screen and (min-width: 1496px) {
+    .index-episode-title, .episode-title {
+      font-size: 2.2em; } }
+  @media screen and (min-width: 1664px) {
+    .index-episode-title, .episode-title {
+      font-size: 2.35em; } }
+  @media screen and (min-width: 1832px) {
+    .index-episode-title, .episode-title {
+      font-size: 2.5em; } }
+
 .logo {
-  letter-spacing: 4em; }
+  letter-spacing: 3em;
+  display: block;
+  text-decoration: none; }
 
 .logo-type-good, .logo-type-bad, .logo-type-show {
   display: inline-block;
-  max-height: 8em;
+  max-height: 6em;
   margin: 3% 0; }
   @media screen and (min-width: 1000px) {
     .logo-type-good, .logo-type-bad, .logo-type-show {
@@ -370,3 +409,12 @@ a.feed-link {
   display: inline-block;
   margin: 2em 0;
   color: #000; }
+
+.index-episode-title {
+  display: inline;
+  text-decoration: none;
+  color: inherit;
+  margin: 0 0.5em;
+  line-height: 170%; }
+  .index-episode-title:hover {
+    text-decoration: underline; }
